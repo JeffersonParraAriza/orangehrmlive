@@ -8,9 +8,13 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.TakesScreenshot;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
 import com.ibm.icu.text.SimpleDateFormat;
 
 import net.thucydides.core.annotations.Step;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 
 public class Questions {
@@ -48,6 +52,14 @@ public class Questions {
 	public void textoCrearCuentaAssert(WebDriver driver) {
 
 		Assert.assertEquals("Crea una contraseña", "Crea una contraseña");
+	}
+	
+	@Step
+	public void assertWelcome(WebDriver driver) {
+
+		WebElement Usuario = driver.findElement(By.id("welcome"));
+		System.out.println(Usuario.getText());
+		Assert.assertEquals(Usuario.getText(), "Welcome Paul");
 	}
 
 	@Step

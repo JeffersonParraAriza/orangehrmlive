@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import Orange.Steps.ButtonPages;
 import Orange.Steps.Questions;
 
-public class PimPage {
+public class LeavePage {
 	
 	private ButtonPages buttonPages;
 	private Questions questions;
@@ -20,7 +20,7 @@ public class PimPage {
 	@FindBy(how = How.ID, using = "lastName")
 	private WebElement txtlastName;
 	
-	public PimPage(WebDriver driver) {
+	public LeavePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.buttonPages = new ButtonPages(driver);
 		this.questions = new Questions();

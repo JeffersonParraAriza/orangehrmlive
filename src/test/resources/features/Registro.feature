@@ -21,5 +21,5 @@ Feature: ingreso orange
     Then diligenciar los campos first name <firstName> y last name <lastName>
 
     Examples: 
-      | userName | passWord | firstName | lastName |
-      | Admin    | admin123 | Jefferson | Parra    |
+      | userName | passWord | firstName       | lastName |
+      | Admin    | admin123 | JeffersonAndres | Parra    |
