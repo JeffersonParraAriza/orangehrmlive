@@ -36,5 +36,6 @@ public class PimPage {
 		txtlastName.sendKeys(lastName);
 		questions.tiempoSegundos(1);
 		questions.screenShot(driver);
+		buttonPages.btnSave();
 	}
 }
